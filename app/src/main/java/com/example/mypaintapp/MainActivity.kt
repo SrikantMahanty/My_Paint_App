@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //btn_Brush = findViewById(R.id.btn_brush)
+        btn_Brush = findViewById(R.id.btn_brush)
         btn_Color = findViewById(R.id.btn_base_color)
         btn_Undo = findViewById(R.id.btn_undo)
         btn_Redo = findViewById(R.id.btn_redo)
@@ -39,10 +39,10 @@ class MainActivity : AppCompatActivity() {
         btn_Color.setOnClickListener {
             dr_view.setBrushColor(R.color.white)
         }
-//        btn_Brush.setOnClickListener {
-//            dr_view.setSizeForBrush(27)
-//            dr_view.setBrushAlpha(100)
-//        }
+        btn_Brush.setOnClickListener {
+            dr_view.setSizeForBrush(14)
+            dr_view.setBrushAlpha(100)
+        }
         btn_Clear.setOnClickListener {
             dr_view.clearDrawingBoard()
         }
